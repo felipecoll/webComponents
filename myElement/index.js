@@ -1,7 +1,6 @@
 class myElement extends HTMLElement{
  constructor() {
     super()
-    this.attachShadow({mode: 'open'})
  }
 
  getTemplate() {

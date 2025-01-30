@@ -24,7 +24,7 @@ class myElement extends HTMLElement{
             </style>`
  }
  render () {
-    this.appendChild(this.getTemplate().content.cloneNode(true))
+    this.shadowRoot.appendChild(this.getTemplate().content.cloneNode(true))
  }
  connectedCallback() {
     this.render()
